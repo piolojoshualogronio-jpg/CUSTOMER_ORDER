@@ -126,7 +126,7 @@ public class CustomerOrder extends JFrame {
                 return;
             }
 
-            String message = backend.addOrder(
+          String message = backend.addOrder(
                 customer, food, qty, cost
             );
 
