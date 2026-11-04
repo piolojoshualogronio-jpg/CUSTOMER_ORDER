@@ -177,7 +177,7 @@ public class CustomerOrder extends JFrame {
 
         String message = backend.searchOrder(number);
 
-        JOptionPane.showMessageDialog(this, message);
+       JOptionPane.showMessageDialog(this, message);
     }
 
     // CLEAR FIELDS
