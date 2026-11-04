@@ -164,5 +164,35 @@ public class CustomerOrder extends JFrame {
         displayOrders();
     }
 
-   
+    // SEARCH ORDER
+    void searchOrder() {
+
+        String number = search.getText().trim();
+
+        if (number.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                "Please enter an Order Number!");
+            return;
+        }
+
+        String message = backend.searchOrder(number);
+
+       JOptionPane.showMessageDialog(this, message);
+    }
+
+    // CLEAR FIELDS
+    void clearFields() {
+
+         name.setText("");
+         item.setText("");
+         quantity.setText("");
+         price.setText("");
+    }
+
+    // MAIN METHOD
+    public static void main(String[] args) {
+
+  SwingUtilities.invokeLater(() -> new CustomerOrder());
+    }
+}
 
