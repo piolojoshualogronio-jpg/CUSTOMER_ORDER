@@ -192,7 +192,7 @@ public class CustomerOrder extends JFrame {
     // MAIN METHOD
     public static void main(String[] args) {
 
-  SwingUtilities.invokeLater(() -> new CustomerOrder());
+  
     }
 }
 
