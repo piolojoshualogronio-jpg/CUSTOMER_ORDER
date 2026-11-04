@@ -183,10 +183,10 @@ public class CustomerOrder extends JFrame {
     // CLEAR FIELDS
     void clearFields() {
 
-        name.setText("");
-        item.setText("");
-        quantity.setText("");
-        price.setText("");
+         name.setText("");
+         item.setText("");
+         quantity.setText("");
+         price.setText("");
     }
 
     // MAIN METHOD
